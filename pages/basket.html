@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket</title>
+    <link rel="stylesheet" href="../css/basket.css">
+    <link rel="shortcut icon" href="../Images/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/e81e359da7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container"> 
+        <nav>
+            <img src="../Images/logo.png" class="logo" alt="">
+            <h1>Basket</h1>
+            <ul>
+                <li><a href="../pages/homepage.html">Home</a></li>
+                <li><a href="../pages/risingdesk.html">Rising Desk</a></li>
+                <li><a href="../pages/health-benefits.html">Health Benefits</a></li>
+                <li><a href="../pages/review.html">Reviews Us</a></li>
+                <li><a class="bsk" href="../pages/basket.html"><img src="../Images/basketicon.png" alt="">Basket</a></li>
+            </ul>
+        </nav>        
+        <div id="basket-items" class="basket-items">
+             <!-- Items added to the cart will be displayed here -->
+        </div>
+        <div class="total-price-container">
+            <p id="total-price">Total Price: $0.00</p>
+        </div>
+        <div class="button-container">
+            <button onclick="makePayment()">BUY NOW</button>
+            <button onclick="clearBasket()">CLEAR BASKET</button>
+        </div>
+    </div>
+    <footer>
+        <div class="map">
+            <h2>About Us</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.957278402399!2d72.8684088759354!3d19.0216041036765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf3949dda405%3A0xefd46c9d73152f82!2sVIDYALANKAR%20INSTITUTE%20OF%20TECHNOLOGY%2C%20Mumbai%2C%20Maharashtra%20400037!5e0!3m2!1sen!2sin!4v1694836803111!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h3>HSD - Hammad's Standing Desks</h3><br>
+            <p>HSD - Hammad's Standing Desks is your premier source for all kinds of standing desks. We're a passionate team of indoor enthusiasts dedicated to providing high-quality, and comfortable working-at-home experience. With a commitment to eco-conscious practices and top-notch customer service, we aim to make your working-at-home experience unforgettable. Join us in exploring how easy and comfortable it can be to work from home.</p><br>
+            <p> Address :
+                Vidyalankar Campus, Vidyalankar College Marg, 
+                   Wadala (East),Mumbai - 400037 Maharashtra.
+               
+           </P>
+           <P>
+               Contact Person : Hammad Khan
+           <p>
+               Contact Number:  7506092512
+           </P>
+           <p> Email Address: hammy79826@gmail.com </P>
+    
+           <P> Also Find US On : </P>
+        </div><br>    
+     
+        <div class="social">
+            <a href="https://www.facebook.com"><i class ="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class ="fa-brands fa-instagram"></i></a>
+            <a href="https://www.twitter.com"><i class ="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+    <script src="../javascript/basket.js"></script>
+</body>
+</html>

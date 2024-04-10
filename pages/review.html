@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARCC</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/e81e359da7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div> 
+        <nav>
+            <img src="../Images/logo.png" class="logo" alt="">
+            <h1>Review Us</h1>
+            <ul>
+                <li><a href="../pages/homepage.html">Home</a></li>
+                <li><a href="../pages/risingdesk.html">Rising Desk</a></li>
+                <li><a href="../pages/health-benefits.html">Health Benefits</a></li>
+                <li><a href="../pages/review.html">Review Us</a></li>
+                <li><a class="bsk" href="../pages/basket.html"><img src="../Images/basketicon.png" alt="">Basket</a></li>
+            </ul>
+        </nav>
+    </div>
+    <b>Product Review Form</b>
+    <div class="page">
+        <div class="review-form">
+            <h2>Write a Review</h2>
+            <form>
+                <table>
+                    <tr>
+                        <td><label for="customer-name">Customer Name:</label></td>
+                        <td><input type="text" id="customer-name" name="customer-name" required placeholder="Enter Name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="product">Product:</label></td>
+                        <td>
+                            <select id="product" name="product" required>
+                                <option value="" disabled selected>Select a product</option>
+                                <option value="Rising-desk-1">Rising Desk 1</option>
+                                <option value="Rising-desk-2">Rising Desk 2</option>
+                                <option value="Rising-desk-3">Rising Desk 3</option>
+                                <option value="Rising-desk-4">Rising Desk 4</option>
+                                <option value="Rising-desk-5">Rising Desk 5</option>
+                                <option value="Rising-desk-6">Rising Desk 6</option>
+                              </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="remarks">Remarks:</label></td>
+                        <td><textarea id="remarks" name="remarks" rows="4" cols="50" required placeholder="Enter Your Remarks"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="star-rating">Star Rating:</label>
+                          </td>
+                          <td>
+                            <div class="rate">
+                              <input type="radio" id="star5" name="rate" value="5">
+                              <label for="star5" title="text">5 stars</label>
+                              <input type="radio" id="star4" name="rate" value="4">
+                              <label for="star4" title="text">4 stars</label>
+                              <input type="radio" id="star3" name="rate" value="3">
+                              <label for="star3" title="text">3 stars</label>
+                              <input type="radio" id="star2" name="rate" value="2">
+                              <label for="star2" title="text">2 stars</label>
+                              <input type="radio" id="star1" name="rate" value="1">
+                              <label for="star1" title="text">1 star</label>
+                            </div>
+                          </td>
+                          
+                </table>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="video">
+            <h2>Product Video</h2>
+            <iframe width="560" height="315" src="../Images/table1_video.mp4" title="Video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <footer>
+        <div class="map">
+            <h2>About Us</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.957278402399!2d72.8684088759354!3d19.0216041036765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf3949dda405%3A0xefd46c9d73152f82!2sVIDYALANKAR%20INSTITUTE%20OF%20TECHNOLOGY%2C%20Mumbai%2C%20Maharashtra%20400037!5e0!3m2!1sen!2sin!4v1694836803111!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h3>HSD - Hammad's Standing Desks</h3><br>
+            <p>HSD - Hammad's Standing Desks is your premier source for all kinds of standing desks. We're a passionate team of indoor enthusiasts dedicated to providing high-quality, and comfortable working-at-home experience. With a commitment to eco-conscious practices and top-notch customer service, we aim to make your working-at-home experience unforgettable. Join us in exploring how easy and comfortable it can be to work from home.</p><br>
+            <p> Address :
+                Vidyalankar Campus, Vidyalankar College Marg, 
+                   Wadala (East),Mumbai - 400037 Maharashtra.
+               
+           </P>
+           <P>
+               Contact Person : Hammad Khan
+           <p>
+               Contact Number:  7506092512
+           </P>
+           <p> Email Address: hammy79826@gmail.com </P>
+    
+           <P> Also Find US On : </P>
+        </div><br>    
+     
+        <div class="social">
+            <a href="https://www.facebook.com"><i class ="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class ="fa-brands fa-instagram"></i></a>
+            <a href="https://www.twitter.com"><i class ="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            $('#review-form').submit(function (event) {
+                // Prevent the form from submitting
+                event.preventDefault();
+
+                // Perform validation
+                var customerName = $('#customer-name').val();
+                var remarks = $('#remarks').val();
+
+                // Reset previous error messages
+                $('.error-message').remove();
+
+                var isValid = true;
+
+                // Validate Customer Name
+                if (customerName.trim() === '') {
+                    $('#customer-name').after('<span class="error-message">Please enter your name.</span>');
+                    isValid = false;
+                }
+
+                // Validate Remarks
+                if (remarks.trim() === '') {
+                    $('#remarks').after('<span class="error-message">Please enter your remarks.</span>');
+                    isValid = false;
+                }
+
+                // If all fields are valid, submit the form
+                if (isValid) {
+                    this.submit();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

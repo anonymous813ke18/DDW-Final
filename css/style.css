@@ -1,0 +1,560 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(196, 164, 132, 0.65), rgba(196, 164, 132, 0.65));
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px 8%;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px 8%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+}
+
+.logo {
+    width: 180px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li .bsk {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background: #f5168d;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+nav ul li a img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.content {
+    margin-top: 14%;
+    color: #fff;
+    max-width: 620px;
+}
+
+.content h1 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 75px;
+    margin-bottom: 20px;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Add styles for the previous and next buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the left */
+.prev {
+    left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.map h2 {
+    background-color: white;
+    font-size: 45px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.map iframe {
+    float: right;
+    width: 500px;
+    height: 500px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.map h3 {
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.map p {
+    font-size: 20px;
+    color: white;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    padding-left: 20rem;
+}
+
+.social a {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+    margin: 0 30px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.social a .fa-brands {
+    font-size: 30px;
+    line-height: 80px;
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+}
+
+.social a::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    background: linear-gradient(-45deg, #ed1c94, #ffec17);
+    position: absolute;
+    transition: 0.5s;
+}
+
+.social a:hover::after {
+    top: 0;
+}
+
+.social a:hover .fab {
+    color: #fff;
+}
+
+.social a:hover {
+    transform: translateY(-10px);
+}
+
+/* Review Css */
+.page {
+    display: flex;
+    flex-direction: row;
+    /* Arrange elements in a row */
+    align-items: flex-start;
+    /* Align items at the top */
+    padding: 20px;
+}
+
+.review-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.review-form h2 {
+    text-align: center;
+}
+
+.review-form table {
+    width: 100%;
+}
+
+.review-form td {
+    padding: 5px;
+}
+
+.review-form select,
+.review-form textarea,
+.review-form input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.rate {
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    flex: 1;
+    max-width: 100%;
+    margin: 0 20px;
+}
+
+.video h2 {
+    text-align: center;
+}
+
+.video iframe {
+    width: 60%;
+    height: 20rem;
+}
+
+.rate { 
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+
+.rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rate:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.rate:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rate>input:checked~label {
+    color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: #deb217;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+    color: #c59b08;
+}
+
+@media (max-width: 780px) {
+    .page {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .video {
+        margin: 20px 0; /* Add spacing between the form and video */
+        height: 15rem;
+    }
+}
+
+/* .page {
+    max-width: 10000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    display: flex;
+}
+
+.review-form {
+    flex: 1; /* Take up half of the content container 
+    padding-right: 20px; /* Add spacing between sections 
+}
+
+.review-form h2 {
+    margin-bottom: 10px;
+    padding-right: 20px;
+}
+
+.review-form table {
+    width: 100%;
+    border-collapse: collapse;
+    padding-right: 20px;
+}
+
+.review-form table td {
+    padding: 8px;
+}
+
+.review-form input[type="text"],
+.review-form select,
+.review-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.review-form textarea {
+    resize: vertical;
+}
+
+.review-form input[type="submit"] {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.review-form input[type="submit"]:hover {
+    background-color: #004b8e;
+}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+.video {
+    flex: 1; /* Take up half of the content container 
+    padding-left: 100px;
+}
+
+.video h2 {
+    margin-bottom: 10px;
+} */
+/* 
+media queries */
+@media (max-width: 1544px) {
+    .container {
+        padding: 8px 4%;
+    }
+
+    nav {
+        padding: 20px 1%;
+    }
+
+    .logo {
+        width: 140px;
+    }
+
+    nav ul {
+        padding-right: 40px;
+    }
+
+    nav ul li {
+        margin: 10px 20px;
+    }
+
+    .btn {
+        padding: 6px 16px;
+    }
+
+    .btn img {
+        width: 22px;
+    }
+}
+
+@media (max-width: 1206px) {
+    .container {
+        padding: 8px 2%;
+    }
+
+    nav {
+        padding: 16px 2px;
+    }
+
+    .logo {
+        width: 130px;
+    }
+
+    nav ul {
+        padding-right: 30px;
+    }
+
+    nav ul li {
+        margin: 8px 16px;
+    }
+
+    .btn {
+        padding: 6px 16px;
+    }
+
+    .btn img {
+        width: 22px;
+    }
+}
+
+@media (max-width: 1206px) {}
+
+/*footer*/
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .review-form,
+    .video {
+        width: 100%;
+        padding: 0;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}

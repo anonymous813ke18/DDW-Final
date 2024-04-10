@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(196, 164, 132, 0.65), rgba(196, 164, 132, 0.65)), url(background.png);
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px 8%;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px 8%;
+}
+
+.categories {
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+}
+
+.logo {
+    width: 180px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li .bsk {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background: #f5168d;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+nav ul li a img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    text-align: center;
+    width: 50%; /* Two items per row on small screens, adjust as needed */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.item h2 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.item object {
+    width: 250px;
+    height: 250px;
+    width: 100%; /* Adjust image size as needed */
+    height: auto;
+}
+.catalog .item {
+    margin: 15px;
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .4s;
+    height: 23.5rem;
+}
+.add-to-cart {
+    background: #2183a2;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+/* .catalog {
+    grid-template-columns: auto auto auto auto;
+    gap: 1rem;
+    padding: 0.5rem;
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.catalog .item {
+    margin: 15px;
+    text-align: center;
+    border-radius: 2rem;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .4s;
+}
+
+.catalog .item object:hover {
+    transform: scaleX(-1);
+}
+
+.catalog .item:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px, -8px);
+}
+
+object {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+} */
+
+h2 {
+    font-size: 26px;
+    text-align: center;
+    color: #222f3e;
+    margin: 0;
+}
+
+.map h2 {
+    background-color: white;
+    font-size: 45px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.map iframe {
+    float: right;
+    width: 500px;
+    height: 500px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.map h3 {
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.map p {
+    font-size: 20px;
+    color: white;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    padding-left: 20rem;
+}
+
+.social a {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+    margin: 0 30px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.social a .fa-brands {
+    font-size: 30px;
+    line-height: 80px;
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+}
+
+.social a::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    background: linear-gradient(-45deg, #ed1c94, #ffec17);
+    position: absolute;
+    transition: 0.5s;
+}
+
+.social a:hover::after {
+    top: 0;
+}
+
+.social a:hover .fab {
+    color: #fff;
+}
+
+.social a:hover {
+    transform: translateY(-10px);
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-input {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    height: 40px;
+    transition: all 0.3s;
+}
+
+#search-button {
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+
+    display: flex;
+    align-items: center;
+}
+
+#search-button i {
+    margin-right: 5px;
+}
+
+#search-button:hover {
+    background-color: green;
+}
+
+input[type=text]:focus {
+    width: 50%;
+}
+
+input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+@media (max-width: 1544px) {
+    .container {
+        padding: 8px 4%;
+    }
+
+    nav {
+        padding: 20px 1%;
+    }
+
+    .logo {
+        width: 140px;
+    }
+
+    nav ul {
+        padding-right: 40px;
+    }
+
+    nav ul li {
+        margin: 10px 20px;
+    }
+
+    .btn {
+        padding: 6px 16px;
+    }
+
+    .btn img {
+        width: 22px;
+    }
+}
+
+@media (max-width: 1206px) {
+    .container {
+        padding: 8px 2%;
+    }
+
+    nav {
+        padding: 16px 2px;
+    }
+
+    .logo {
+        width: 130px;
+    }
+
+    nav ul {
+        padding-right: 30px;
+    }
+
+    nav ul li {
+        margin: 8px 16px;
+    }
+
+    .btn {
+        padding: 6px 16px;
+    }
+
+    .btn img {
+        width: 22px;
+    }
+}
+
+@media (max-width: 1206px) {}
+
+/*footer*/
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .review-form,
+    .video {
+        width: 100%;
+        padding: 0;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (min-width: 768px) {
+    .item {
+        width: 25%; /* Four items per row on larger screens, adjust as needed */
+    }
+}
